@@ -1,0 +1,13 @@
+.search-input {
+  flex-grow: 1;
+  width: 224px;
+  margin-right: 5px;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline-offset: unset;
+}
+
+.search-input:focus {
+  border-color:#18BC9C;
+}

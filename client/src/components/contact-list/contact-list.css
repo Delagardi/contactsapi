@@ -1,0 +1,32 @@
+.contact-list {
+  min-height: 500px;
+}
+
+.persons-list-header {
+  margin: 2rem 0;
+}
+
+table.persons-list {
+  width: 100%;
+}
+
+table.persons-list th, table.persons-list td {
+  border-top: #ccc 1px solid;
+  padding: 10px;
+}
+
+
+.persons-item-button {
+  font-size: 1.5rem;
+  width: 1.5rem;
+  float: left;
+  margin-right: 0.5rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.persons-item-button:focus {
+  outline: none;
+}
