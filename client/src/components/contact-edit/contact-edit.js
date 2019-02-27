@@ -21,8 +21,7 @@ class ContactEdit extends Component {
       email: '',
       funds: '',
       city: '',
-      phone: '',
-      res: {}
+      phone: ''
     }
   }
 
@@ -31,10 +30,8 @@ class ContactEdit extends Component {
 
     axios.get('http://localhost:8080')
       .then(res => {
-        this.componentDidMount()
 
         this.props.personsLoaded(res.data.data)
-        return this.setState({ res : res.data.data })
       })
       .catch( (error) => this.props.personsLoadError(error) );
   }
@@ -80,6 +77,8 @@ class ContactEdit extends Component {
 
     axios.put(`http://localhost:8080/update/${id}`, person)
       .then(res => {
+
+        this.componentDidMount()
 
         return this.props.onEditPersonRequest(res.data)
       })
